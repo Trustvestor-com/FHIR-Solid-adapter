@@ -1,0 +1,50 @@
+{
+  "name": "fhir-solid-adapter",
+  "version": "0.1.0-alpha",
+  "description": "Open-source semantic middleware connecting HL7 FHIR servers with Solid Pods for biobank data portability",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "fhir",
+    "solid",
+    "hl7",
+    "biobank",
+    "miabis",
+    "rdf",
+    "healthcare",
+    "data-portability",
+    "gdpr",
+    "semantic-web"
+  ],
+  "author": "Trustvestor Ltd. <contact@trustvestor.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trustvestor/fhir-solid-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trustvestor/fhir-solid-adapter/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@inrupt/solid-client": "^2.0.0",
+    "@inrupt/solid-client-authn-node": "^2.0.0",
+    "fhir.js": "^0.0.22",
+    "jsonld": "^8.3.0",
+    "rdf-ext": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
+}
